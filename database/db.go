@@ -11,11 +11,11 @@ import (
 )
 
 var (
-	host = os.Getenv("PGHOST")
-	user = os.Getenv("PGUSER")
-	password = os.Getenv("PGPASSWORD")
-	dbPort = os.Getenv("PGPORT")
-	dbname = os.Getenv("PGDATABASE")
+	host = "localhost"
+	user = "postgres"
+	password = 969799
+	dbPort = "5432"
+	dbname = "project"
 	db *gorm.DB
 	err error
 )

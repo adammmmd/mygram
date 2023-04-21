@@ -8,7 +8,6 @@ import (
 
 func main() {
 	database.ConnectDB()
-	var PORT = os.Getenv("PORT")
 	r := router.StartApp()
-	r.Run(":" + PORT)
+	r.Run(":8080")
 }
