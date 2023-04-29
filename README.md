@@ -7,13 +7,13 @@ MyGram is a photo sharing app. You can add photo, comment and socmed. Try by reg
 To start running this project locally,
 
 ```bash
-git clone https://github.com/musshal/mygram-api.git
+git clone https://github.com/adammmmd/mygram.git
 ```
 
 Open mygram-api folder and install all required dependencies
 
 ```bash
-cd mygram-api && go mod tidy
+cd mygram && go mod tidy
 ```
 
 Change username and password in db.go to your postgresql account
