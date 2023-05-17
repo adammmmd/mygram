@@ -12,16 +12,16 @@ import (
 
 var (
 	host = "localhost"
-	user = "postgres"
-	password = 969799
+	user = "youruser"
+	password = "yourpassword"
 	dbPort = "5432"
-	dbname = "project"
+	dbname = "yourproject"
 	db *gorm.DB
 	err error
 )
 
 func ConnectDB() {
-	config := fmt.Sprintf("host=%s user=%s password=%d dbname=%s port=%s sslmode=disable", host, user, password, dbname, dbPort)
+	config := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable", host, user, password, dbname, dbPort)
 	db, err = gorm.Open(postgres.Open(config), &gorm.Config{})
 	if err != nil {
 		log.Fatal("error connecting to database:", err)
